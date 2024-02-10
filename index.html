@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Responsive Container with Radio Buttons</title>
+  </head>
+  <body>
+    <div class="text-with-lines">
+      <div class="line"></div>
+      <div style="margin: 5px">YAY it's BOGO</div>
+      <div class="line"></div>
+    </div>
+
+    <div
+      class="container"
+      id="container1"
+      onclick="toggleDropdowns('container1','radio1')"
+    >
+      <div class="details">
+        <div class="unit">
+          <input
+            type="radio"
+            name="containerRadio"
+            id="radio1"
+            class="radios"
+            onclick="toggleDropdowns('container1','radio1')"
+          />
+          <div class="label">
+            <label for="radio1"><b>1 Unit</b></label>
+            <button class="btn">10% OFF</button>
+            <br />
+            Standard Price
+          </div>
+        </div>
+        <div>
+          <span>$10.00 USD</span><br />
+          <span style="color: rgb(0 0 0 / 30%)"
+            ><strike>$24.00 USD</strike></span
+          >
+        </div>
+      </div>
+      <div class="dropdowns" id="dropdowns1">
+        <div>
+          <span style="margin-right: 45px; margin-left: 30px">size</span>
+          <span>colour</span>
+        </div>
+        <div class="custom-dropdown">
+          <span style="margin-right: 5px">#1</span>
+          <select>
+            <option value="option1">S</option>
+            <option value="option2">M</option>
+            <option value="option3">L</option>
+            <option value="option3">XL</option>
+          </select>
+          <select>
+            <option value="option4">Colour</option>
+            <option value="option5">Red</option>
+            <option value="option6">Orrange</option>
+            <option value="option3">Yellow</option>
+          </select>
+        </div>
+        <div style="margin-bottom: 5px" class="custom-dropdown">
+          <span style="margin-right: 5px">#2</span>
+          <select style="margin-left: -2px">
+            <option value="option1">S</option>
+            <option value="option2">M</option>
+            <option value="option3">L</option>
+            <option value="option3">XL</option>
+          </select>
+          <select>
+            <option value="option4">Colour</option>
+            <option value="option5">Red</option>
+            <option value="option6">Orrange</option>
+            <option value="option3">Yellow</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <!-- Most Popular Button -->
+    <div style="position: relative; padding-top: 10px; width: 341px">
+      <button
+        class="popular"
+        style="right: 0px; z-index: -1; border-radius: 7px; padding: 5px 10px"
+      >
+        <b>MOST POPULAR</b>
+      </button>
+      <button
+        class="popular"
+        style="
+          right: 5px;
+          z-index: 10;
+          padding: 5px;
+          border-radius: 0px 0px 4px 4px;
+        "
+      >
+        <b>MOST POPULAR</b>
+      </button>
+    </div>
+    <div
+      class="container"
+      id="container2"
+      onclick="toggleDropdowns('container2','radio2')"
+    >
+      <div class="details">
+        <div class="unit">
+          <input
+            type="radio"
+            name="containerRadio"
+            id="radio2"
+            class="radios"
+            onclick="toggleDropdowns('container2','radio2')"
+            checked
+          />
+          <div class="label">
+            <label for="radio2"><b>2 Unit</b></label>
+            <button class="btn">20% OFF</button>
+          </div>
+        </div>
+        <div style="margin-top: 5px">
+          <span>$10.00 USD</span><br />
+          <span style="color: rgb(0 0 0 / 30%)"
+            ><strike>$24.00 USD</strike></span
+          >
+        </div>
+      </div>
+      <div class="dropdowns" id="dropdowns2">
+        <div>
+          <span style="margin-right: 45px; margin-left: 30px">size</span>
+          <span>colour</span>
+        </div>
+        <div class="custom-dropdown">
+          <span style="margin-right: 5px">#1</span>
+          <select>
+            <option value="option1">S</option>
+            <option value="option2">M</option>
+            <option value="option3">L</option>
+            <option value="option3">XL</option>
+          </select>
+          <select>
+            <option value="option4">Colour</option>
+            <option value="option5">Red</option>
+            <option value="option6">Orrange</option>
+            <option value="option3">Yellow</option>
+          </select>
+        </div>
+        <div style="margin-bottom: 5px" class="custom-dropdown">
+          <span style="margin-right: 5px">#2</span>
+          <select style="margin-left: -2px">
+            <option value="option1">S</option>
+            <option value="option2">M</option>
+            <option value="option3">L</option>
+            <option value="option3">XL</option>
+          </select>
+          <select>
+            <option value="option4">Colour</option>
+            <option value="option5">Red</option>
+            <option value="option6">Orrange</option>
+            <option value="option3">Yellow</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container"
+      id="container3"
+      onclick="toggleDropdowns('container3','radio3')"
+    >
+      <div class="details">
+        <div class="unit">
+          <input
+            type="radio"
+            name="containerRadio"
+            id="radio3"
+            class="radios"
+            onclick="toggleDropdowns('container3','radio3')"
+          />
+          <div class="label">
+            <label for="radio3"><b>3 Unit</b></label>
+            <button class="btn">30% OFF</button>
+          </div>
+        </div>
+        <div>
+          <span>$10.00 USD</span><br />
+          <span style="color: rgb(0 0 0 / 30%)"
+            ><strike>$24.00 USD</strike></span
+          >
+        </div>
+      </div>
+      <div class="dropdowns" id="dropdowns3">
+        <div>
+          <span style="margin-right: 45px; margin-left: 30px">size</span>
+          <span>colour</span>
+        </div>
+        <div class="custom-dropdown">
+          <span style="margin-right: 5px">#1</span>
+          <select>
+            <option value="option1">S</option>
+            <option value="option2">M</option>
+            <option value="option3">L</option>
+            <option value="option3">XL</option>
+          </select>
+          <select>
+            <option value="option4">Colour</option>
+            <option value="option5">Red</option>
+            <option value="option6">Orrange</option>
+            <option value="option3">Yellow</option>
+          </select>
+        </div>
+        <div style="margin-bottom: 5px" class="custom-dropdown">
+          <span style="margin-right: 5px">#2</span>
+          <select style="margin-left: -2px">
+            <option value="option1">S</option>
+            <option value="option2">M</option>
+            <option value="option3">L</option>
+            <option value="option3">XL</option>
+          </select>
+          <select>
+            <option value="option4">Colour</option>
+            <option value="option5">Red</option>
+            <option value="option6">Orrange</option>
+            <option value="option3">Yellow</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="total">
+      <p style="color: #ff6b82">Free Delivery</p>
+      <p>Total: $18.00 USD</p>
+    </div>
+
+    <button style="width: 342px; height: 40px; border-radius: 4px" class="btn">
+      <span><b>+</b></span> Add to Cart
+    </button>
+
+    <script src="app.js"></script>
+  </body>
+</html>
